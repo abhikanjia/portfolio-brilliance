@@ -23,8 +23,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://github.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/abhikanjia" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://in.linkedin.com/in/abhi-kanjia-303766247" },
   ];
 
   return (
