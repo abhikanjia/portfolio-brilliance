@@ -8,9 +8,6 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Abhi Kanjia. All rights reserved.
           </p>
-          <p className="flex items-center gap-1 text-sm text-muted-foreground">
-            Crafted with <Heart className="w-4 h-4 text-primary fill-primary" /> using React
-          </p>
         </div>
       </div>
     </footer>
