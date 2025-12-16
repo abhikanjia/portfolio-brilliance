@@ -2,37 +2,19 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: [
-        { name: "Java", level: 85 },
-        { name: "JavaScript", level: 90 },
-        { name: "C", level: 75 },
-      ],
+      skills: ["Java", "JavaScript", "C"],
     },
     {
       title: "Web Technologies",
-      skills: [
-        { name: "ReactJS", level: 88 },
-        { name: "HTML/CSS", level: 92 },
-        { name: "Node.js", level: 82 },
-        { name: "Express", level: 80 },
-      ],
+      skills: ["ReactJS", "HTML/CSS", "Node.js", "Express"],
     },
     {
       title: "Databases",
-      skills: [
-        { name: "MongoDB", level: 85 },
-        { name: "MySQL", level: 80 },
-        { name: "ChromaDB", level: 75 },
-      ],
+      skills: ["MongoDB", "MySQL", "ChromaDB"],
     },
     {
       title: "Tools & Platforms",
-      skills: [
-        { name: "n8n (Automation)", level: 90 },
-        { name: "GitHub", level: 88 },
-        { name: "Agno (Agentic AI)", level: 82 },
-        { name: "Cursor AI", level: 85 },
-      ],
+      skills: ["n8n (Automation)", "GitHub", "Agno (Agentic AI)", "Cursor AI"],
     },
   ];
 
@@ -50,7 +32,7 @@ const Skills = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
+          {skillCategories.map((category) => (
             <div 
               key={category.title} 
               className="glass-card p-8 hover-lift"
@@ -59,23 +41,14 @@ const Skills = () => {
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 {category.title}
               </h3>
-              <div className="space-y-5">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-primary font-mono text-sm">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-bar-fill transition-all duration-1000 ease-out"
-                        style={{ 
-                          width: `${skill.level}%`,
-                          animationDelay: `${(categoryIndex * 4 + skillIndex) * 100}ms`
-                        }}
-                      />
-                    </div>
-                  </div>
+              <div className="flex flex-wrap gap-3">
+                {category.skills.map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium text-sm hover:bg-primary/20 transition-colors"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
