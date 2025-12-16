@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Social links */}
         <div className="animate-slide-up opacity-0 delay-500 flex justify-center gap-4 mb-16">
           <a 
-            href="https://github.com" 
+            href="https://github.com/abhikanjia" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-4 glass-card hover-lift group"
@@ -69,7 +69,7 @@ const Hero = () => {
             <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://in.linkedin.com/in/abhi-kanjia-303766247" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-4 glass-card hover-lift group"
